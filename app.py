@@ -66,7 +66,7 @@ def handle_tasks():
             }
             for task in tasks
         ]
-        return {"count": len(tasks), "tasks": results, "priority": priority}
+        return {"count": len(tasks), "tasks": results}
     elif request.method == "POST":
         if request.is_json:
             data = request.get_json()
